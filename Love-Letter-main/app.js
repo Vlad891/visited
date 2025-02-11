@@ -93,6 +93,7 @@ function loadTrack(trackIndex){
     currentTrack.addEventListener("ended", nextTrack);
     currentTrack.load();
     currentTrack.play();
+    playTrack();
 }
 
 loadTrack(trackIndex);
