@@ -92,6 +92,7 @@ function loadTrack(trackIndex){
     trackArtist.textContent = trackList[trackIndex].artist;
     currentTrack.addEventListener("ended", nextTrack);
     currentTrack.load();
+    playTrack();
 }
 
 loadTrack(trackIndex);
