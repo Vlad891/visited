@@ -4,9 +4,15 @@ let dateVal = date.getTime();
 let today = new Date();
 let now = today.getTime();
 let value = now - dateVal;
-let day = Math.floor(value / (1000 * 60 * 60 * 24));
-let month = Math.floor(value / (1000 * 60 * 60 * 24 * 30.4375));
+
 let year = Math.floor(value / (1000 * 60 * 60 * 24 * 365.25));
+let remainingValueAfterYears = value % (1000 * 60 * 60 * 24 * 365.25);
+
+let month = Math.floor(remainingValueAfterYears / (1000 * 60 * 60 * 24 * 30.4375));
+let remainingValueAfterMonths = remainingValueAfterYears % (1000 * 60 * 60 * 24 * 30.4375);
+
+let day = Math.floor(remainingValueAfterMonths / (1000 * 60 * 60 * 24));
+
 
 console.log(value);
 
