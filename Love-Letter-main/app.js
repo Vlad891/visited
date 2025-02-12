@@ -60,24 +60,24 @@ let soundBarsLottie = bodymovin.loadAnimation({
 
 let trackList = [
     {
-        name: "Only",
-        artist: "Lee Hi",
-        path: "./music/only.mp3",
+        name: "You're Beautiful",
+        artist: "James Blunt",
+        path: "./music/You're Beautiful.mp3",
     },
     {
-        name: "Day & Night",
-        artist: "Jung Seung Hwan",
-        path: "./music/day and night.mp3",
+        name: "Someone You Loved",
+        artist: "Lewis Capaldi",
+        path: "./music/Someone You Loved.mp3",
     },
     {
-        name: "Love of my Life",
-        artist: "Reyne",
-        path: "./music/love of my life.mp3",
+        name: "Kiss Me",
+        artist: "Sixpence None The Richer",
+        path: "./music/Kiss Me.mp3",
     },
     {
-        name: "The Only One",
-        artist: "Reyne",
-        path: "./music/the only one.mp3",
+        name: "Perfect",
+        artist: "Ed Sheeran",
+        path: "./music/Perfect.mp3",
     },
 ];
 
