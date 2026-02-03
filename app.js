@@ -78,7 +78,10 @@ function loadTrack(trackIndex){
     currentTrack.addEventListener("ended", nextTrack);
     currentTrack.load();
     currentTrack.play();
-    playTrack();
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadTrack(0); // Загружаем и воспроизводим первый трек
+    });
 }
 
 loadTrack(trackIndex);
