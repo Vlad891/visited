@@ -60,24 +60,9 @@ let soundBarsLottie = bodymovin.loadAnimation({
 
 let trackList = [
     {
-        name: "You're Beautiful",
-        artist: "James Blunt",
-        path: "./music/You're Beautiful.mp3",
-    },
-    {
-        name: "Someone You Loved",
-        artist: "Lewis Capaldi",
-        path: "./music/Someone You Loved.mp3",
-    },
-    {
-        name: "Kiss Me",
-        artist: "Sixpence None The Richer",
-        path: "./music/Kiss Me.mp3",
-    },
-    {
-        name: "Perfect",
-        artist: "Ed Sheeran",
-        path: "./music/Perfect.mp3",
+        name: "Там где ты",
+        artist: "nepropal",
+        path: "./music/secret.mp3",
     },
 ];
 
@@ -92,6 +77,8 @@ function loadTrack(trackIndex){
     trackArtist.textContent = trackList[trackIndex].artist;
     currentTrack.addEventListener("ended", nextTrack);
     currentTrack.load();
+    currentTrack.play();
+    playTrack();
 }
 
 loadTrack(trackIndex);
