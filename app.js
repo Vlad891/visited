@@ -14,14 +14,20 @@ document.getElementById("days").textContent = day.toString();
 document.getElementById("months").textContent = month.toString();
 document.getElementById("years").textContent = year.toString();
 
-document.addEventListener("click", () => {
-    if (!hasPlayed) {
-        loadTrack(trackIndex);
-        hasPlayed = true;
-    }
-});
-let hasPlayed = false;
+const heart = document.querySelector('.heart');
 
+document.addEventListener("click", () => {
+    loadTrack(trackIndex);
+    }
+);
+
+heart.addEventListener('click', () => {
+    if (!isPlaying) {
+        loadTrack(trackIndex);
+        playTrack();
+        }
+    }
+);
 
 let musicPlayer = document.querySelector(".music-container");
 let togglePlayer = document.querySelector(".toggle-player");
