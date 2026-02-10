@@ -16,10 +16,10 @@ document.getElementById("years").textContent = year.toString();
 
 const heart = document.querySelector('.heart');
 
-document.addEventListener("click", () => {
-    loadTrack(trackIndex);
-    }
-);
+//document.addEventListener("click", () => {
+//    loadTrack(trackIndex);
+//    }
+//);
 
 heart.addEventListener('click', () => {
     if (!isPlaying) {
