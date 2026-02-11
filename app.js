@@ -16,6 +16,7 @@ document.getElementById("years").textContent = year.toString();
 
 const heart = document.querySelector('.heart');
 
+// Включение нажатием на любою область
 //document.addEventListener("click", () => {
 //    loadTrack(trackIndex);
 //    }
